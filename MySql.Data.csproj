@@ -6,6 +6,8 @@
     <Copyright>Copyright © 2016, 2024, Oracle and/or its affiliates.</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Version>8.0.28</Version>
+    <AssemblyVersion>8.0.28.0</AssemblyVersion>
+    <FileVersion>8.0.28.0</FileVersion>
     <Authors>Oracle</Authors>
     <DeveloperEmail>developer@mysql.com</DeveloperEmail>
     <AssemblyName>MySql.Data</AssemblyName>
@@ -69,15 +71,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.5" />
-    <PackageReference Include="Google.Protobuf" Version="3.14.0" />
-    <PackageReference Include="K4os.Compression.LZ4.Streams" Version="1.2.6" />
-    <PackageReference Include="System.Buffers" Version="4.5.1" />
-    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="5.0.0" />
-    <PackageReference Include="ZstdSharp.Port" Version="0.8.0" />
-    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+  <PackageReference Include="BouncyCastle.NetCore" Version="1.8.5" />
+  <PackageReference Include="Google.Protobuf" Version="3.14.0" />
+  <PackageReference Include="K4os.Compression.LZ4.Streams" Version="1.2.6" />
+  <PackageReference Include="System.Buffers" Version="4.5.1" />
+  <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+  <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  <PackageReference Include="ZstdSharp.Port" Version="0.8.0" />
+  <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="8.0.1" />
+  <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='net462' or '$(TargetFramework)'=='net48'">
@@ -91,10 +93,10 @@
 
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard2.0' or '$(TargetFramework)'=='netstandard2.1' or '$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='net7.0' or '$(TargetFramework)'=='net8.0' or '$(TargetFramework)'=='net9.1'">
     <Compile Remove="Framework/net462/*" />
-    <PackageReference Include="System.Security.Permissions" Version="4.7.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.4.0" />
-    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
-    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+  <PackageReference Include="System.Security.Permissions" Version="5.0.0" />
+  <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  <PackageReference Include="System.Text.Json" Version="8.0.4" />
   </ItemGroup>
 
   <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
